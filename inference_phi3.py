@@ -70,7 +70,7 @@ class Phi3FinancialAdvisor:
         Returns:
             str: Formatted prompt
         """
-        prompt = f"""<system>You are an expert financial advisor specializing in age-group-based recommendations. Provide personalized, data-driven financial guidance.</system>
+        prompt = f"""<system>You are an expert financial advisor specializing in age-group-based recommendations. Provide personalized, data-driven financial guidance. Use British English spelling and formatting (locale: en-GB).</system>
 <user>Provide comprehensive financial recommendations for:
 
 CUSTOMER PROFILE:

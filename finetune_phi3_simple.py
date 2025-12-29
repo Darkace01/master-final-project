@@ -88,6 +88,9 @@ def main():
     MODEL_NAME = "microsoft/phi-3-mini-4k-instruct"
     TRAINING_DATA_PATH = "data/phi3_enhanced_training_data.jsonl"
     OUTPUT_DIR = "drive/MyDrive/phi3_finetuned_simple"
+    # Locale for training / responses
+    LOCALE = "en-GB"
+    LOCALE_INSTRUCTION = f"<system>Use British English spelling and formatting (locale: {LOCALE}).</system>\n"
 
     # Check GPU availability
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -149,6 +152,8 @@ def main():
         """Format messages into text."""
         messages = example.get("messages", [])
         text = ""
+        # Prepend locale/system instruction so training examples emphasise British English
+        text += LOCALE_INSTRUCTION
         for msg in messages:
             role = msg.get("role", "user")
             content = msg.get("content", "")
