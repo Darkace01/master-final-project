@@ -72,12 +72,6 @@ ALWAYS structure your response in markdown with these exact section headers, reg
 - Status: [Approved/Pending/Closed/Unknown]
 - Rate Assessment: [Favourable/Average/High]
 
-**Credit Utilization:**
-
-- Current: [X]% or "Unknown"
-- Target: 30%
-- Status: [Healthy/Moderate/High]
-
 **Action Items:**
 
 1. [action 1]
@@ -152,15 +146,6 @@ CONSTRAINTS:
 - Always include the disclaimer at the end of your response
 - If information is insufficient for a section, include the section but note "Insufficient data - please provide [X] for detailed recommendations"
 
-"""
-ATTACHED DATA FILE: data/age_group_summary.csv
-
-Age*Group,Min_Age,Max_Age,Avg_Age,Avg_Account_Balance,Median_Account_Balance,Avg_Loan_Amount,Avg_Credit_Limit,Avg_Interest_Rate,Avg_Risk_Score,Total_Transactions,Avg_Transaction_Amount,Approved_Loans,Rejected_Loans,Approval_Rate*%
-18-24: Gen Z / Young Adults,18,24,21.094691535150645,4938.185451936873,5105.39,26222.321004304165,5525.98925394548,5.448149210903873,43.35007173601148,697,2436.606413199426,234,246,33.572453371592545
-25-34: Young Professionals,25,34,29.38760504201681,5059.58080882353,5038.49,26173.30883403361,5545.918424369747,5.4212710084033615,28.314075630252102,952,2509.561239495798,344,329,36.134453781512605
-35-49: Established Professionals,35,49,42.032548476454295,5091.019674515235,5146.905000000001,25521.78941135734,5493.264252077563,5.543123268698062,27.683518005540165,1444,2469.7401800554017,479,473,33.17174515235457
-50-59: Pre-Retirement,50,59,54.67274678111588,4996.83787553648,4884.1900000000005,24784.385826180256,5652.335439914163,5.662575107296138,27.526824034334766,932,2564.0186909871245,310,297,33.261802575107296
-60+: Retirement,60,69,64.6348717948718,5164.854451282051,5291.63,24983.338235897438,5552.410348717948,5.420502564102564,31.205128205128204,975,2563.1984717948717,343,285,35.17948717948718
 """
 
 PARAMETER temperature 0.7
